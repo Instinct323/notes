@@ -1,0 +1,8 @@
+*.zip
+*.rar
+~$*.*
+desktop.ini
+
+resume/
+info/
+idle/
