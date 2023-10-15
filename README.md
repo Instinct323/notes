@@ -1,9 +1,14 @@
 本仓库中, **童赞嘉.pdf** 为个人简历, 其它文件为个人学习笔记
 
-技术博客: https://blog.csdn.net/qq_55745968
+CSDN: https://blog.csdn.net/qq_55745968
 
-一作论文: https://arxiv.org/abs/2301.10051
+Wise-IoU: https://arxiv.org/abs/2301.10051
 
-自建模块: https://github.com/Instinct323/modules
+modules: https://github.com/Instinct323/modules
 
-学习笔记: https://github.com/Instinct323/notes
+Toolkit:
+- [Clion](https://www.jetbrains.com/clion/): 支持 **C++**, **Python**, **MySQL** 代码的运行; 实用插件 **Markdown** Editor, translation
+- [Zotero](https://www.zotero.org/): 论文管理软件, 实用插件 [pdf-translate](https://github.com/windingwind/zotero-pdf-translate), [better-bibtex](https://github.com/retorquere/zotero-better-bibtex)
+- [Overleaf](https://www.overleaf.com/login): 在线协作的 **LaTeX** 编辑器
+- [Grammarly](https://www.grammarly.com/): 英语语法和拼写检查工具
+- [CCF Rec. Conference Deadlines](https://ccfddl.github.io/): **CCF** 会议截止时间
