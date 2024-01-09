@@ -1,6 +1,7 @@
+Lib
+
 *.zip
 *.rar
 ~$*.*
 desktop.ini
-
 *.chm
