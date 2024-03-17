@@ -4,7 +4,7 @@ CSDN: https://blog.csdn.net/qq_55745968
 
 Wise-IoU: https://arxiv.org/abs/2301.10051
 
-modules: https://github.com/Instinct323/modules
+Python modules: https://github.com/Instinct323/pymod
 
 Toolkit:
 - [Clion](https://www.jetbrains.com/clion/): 支持 **C++**, **Python**, **MySQL** 代码的运行; 实用插件 **Markdown** Editor, translation
