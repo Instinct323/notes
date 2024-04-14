@@ -1,0 +1,104 @@
+{
+  "utils": {
+    "adj.": {
+      "state-of-the-art": "最先进的",
+      "differentiable": "可微的"
+    },
+    "n.": {
+      "variable": "变量",
+      "resolution": "分辨率",
+      "correlation": "相关量",
+      "inliers": "样本点",
+      "outliers": "离群点",
+      "sub-task": "子任务",
+      "dot product": "点积",
+      "long range information": "长程信息",
+      "exponential running average": "指数运行平均值"
+    },
+    "metric": {
+      "best possible recall (BPR)": "最优召回率"
+    },
+    "supervision": {
+      "self-supervised": "自监督的",
+      "semi-supervised": "半监督的",
+      "supervised": "有监督的",
+      "unsupervised": "无监督的",
+      "general visual representations": "通用视觉表征"
+    },
+    "GPU": {
+      "memory access cost (MAC)": "存取成本",
+      "energy consumption": "能耗",
+      "computation overhead": "计算开销"
+    },
+    "abbr": {
+      "CSPNet": "Cross Stage Partial Network",
+      "MLP": "Multi-layer Perceptron"
+    }
+  },
+  "layer": {
+    "re-weight": "调整权值",
+    "attr": {
+      "receptive field": "感受野",
+      "model depth multiple": "模型深度增益",
+      "layer channel multiple": "模型宽度增益",
+      "feature extractor": "特征提取器"
+    },
+    "location": {
+      "backbone": "骨干",
+      "stem block": "主干块",
+      "early layers": "早期层",
+      "intermediate layers": "中间层",
+      "later layers": "晚期层",
+      "preceding layers": "前几层"
+    },
+    "topology": {
+      "short path": "短接连线",
+      "connectivity": "联结度",
+      "concatenative aggregation": "级联聚合",
+      "dense aggregation": "密集聚合",
+      "one-shot aggregation": "一次性聚合"
+    },
+    "feature": {
+      "fine-grained features": "细粒度特征",
+      "feature reuse": "特征复用",
+      "shallow features": "浅层特征",
+      "deep features": "深层特征",
+      "low-level features": "低级特征",
+      "multi-level features": "多层次特征"
+    },
+    "gradient": {
+      "the propagated gradient information": "回流的梯度信息",
+      "gradient combination": "梯度组合",
+      "gradient path": "梯度路径",
+      "gradient flow propagation": "梯度流传播"
+    },
+    "CSP": {
+      "CSPNet-based": "基于CSP结构的",
+      "cross-stage hierarchy": "跨阶段层次结构",
+      "cross stage partial strategy": "跨阶段部分策略"
+    },
+    "parameter": {
+      "parameter utilization": "参数利用"
+    }
+  },
+  "segmentation": {
+    "type": {
+      "semantic segmentation": "语义分割",
+      "instance segmentation": "实例分割",
+      "panoptic segmentation": "全景分割"
+    },
+    "object": {
+      "things": "前景实例",
+      "stuff": "背景实例"
+    }
+  },
+  "transformer": {
+    "visual token": "视觉令牌",
+    "embedded patches": "嵌入式补丁"
+  },
+  "regularization": {
+    "regularization techniques": "正则化方法",
+    "co-adaptation information": "共适应信息",
+    "regularize training CNNs": "正则化 CNN 的训练"
+  }
+}

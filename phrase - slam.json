@@ -1,0 +1,14 @@
+{
+  "utils": {
+    "adj.": {
+      "planar": "平面的"
+    },
+    "n.": {
+      "Bundle Adjustment": "光束法平差",
+      "covisibility graph": "共视图",
+      "homography": "单应性矩阵",
+      "fundamental matrix": "基础矩阵",
+      "parallx": "视差"
+    }
+  }
+}
