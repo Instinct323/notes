@@ -13,6 +13,7 @@
       "photometric error": "光度误差 (photometric BA)",
       "inertial measurement unit (IMU)": "惯性传感器",
       "covisibility graph": "共视图",
+      "atlas": "地图册",
       "homography": "单应性矩阵",
       "fundamental matrix": "基础矩阵",
       "parallx": "视差",
