@@ -8,7 +8,6 @@
       "up-to-scale": "尺度一致的 (不确定的)"
     },
     "n.": {
-      "maximum a posteriori (MAP)": "最大后验概率",
       "Visual Odometry (VO)": "视觉里程计",
       "Bundle Adjustment (BA)": "光束法平差",
       "feature reprojection error": "重投影误差 (geometry BA)",
