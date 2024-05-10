@@ -10,6 +10,7 @@
     "n.": {
       "Visual Odometry (VO)": "视觉里程计",
       "Bundle Adjustment (BA)": "光束法平差",
+      "Inertial Measurement Unit (IMU)": "惯性传感器",
       "feature reprojection error": "重投影误差 (geometry BA)",
       "photometric error": "光度误差 (photometric BA)",
       "inertial measurement unit (IMU)": "惯性传感器",
