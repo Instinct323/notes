@@ -1,15 +1,29 @@
-本仓库中, **童赞嘉.pdf** 为个人简历, 其它文件为个人学习笔记
+---
+title: Zanjia Tong
+mail: tongzanjia@qq.com
+scholar: https://scholar.google.com/citations?user=lEIJtB8AAAAJ
+github: https://github.com/Instinct323
+---
 
-CSDN: https://blog.csdn.net/qq_55745968
+### About Me
+I am [Zanjia Tong](https://blog.csdn.net/qq_55745968), 
+a M.Sc. student in [Robotics and Computer Vision Lab](https://rcvlab.eee.sustech.edu.cn/)
+under the direction of [Prof. Hong Zhang](https://www.sustech.edu.cn/zh/faculties/zhanghong.html) 
+at Southern University of Science and Technology (SUSTech), since 09/2024. 
+I received the B.E. degree in automation from the Guangdong University of Technology, in 06/2024. 
+I previously worked on neural network-based computer vision.
+Currently, my research focuses on multi-view geometric computer vision.
 
-Wise-IoU: https://arxiv.org/abs/2301.10051
+<!-- fixme
+### Research
+{{< youtube mhQnRS0X_RA "Research Introduction">}}
 
-Python modules: https://github.com/Instinct323/pymod
+My research interests focus on Visual–Inertial SLAM. 
+-->
 
-Toolkit:
-- [Clion](https://www.jetbrains.com/clion/): 支持 **C++**, **Python**, **MySQL** 代码的运行; 实用插件 **Markdown** Editor, translation
-- [Zotero 6](https://www.zotero.org/): 论文管理软件, 实用插件 [pdf-translate](https://github.com/windingwind/zotero-pdf-translate), [reference](https://github.com/MuiseDestiny/zotero-reference), [better-bibtex](https://github.com/retorquere/zotero-better-bibtex), [short-doi](https://github.com/bwiernik/zotero-shortdoi/tree/v1.4.2), [format-metadata](https://github.com/northword/zotero-format-metadata/releases/tag/0.4.4)
-- [Overleaf](https://www.overleaf.com/login): 在线协作的 **LaTeX** 编辑器
-- [Grammarly](https://www.grammarly.com/): 英语语法和拼写检查工具
-- [easyScholar](https://www.easyscholar.cc/): 浏览器插件, 辅助学术搜索
-- [CCF Rec. Conference Deadlines](https://ccfddl.github.io/): **CCF** 会议截止时间
+### Publications
+- Wise-IoU: bounding box regression loss with dynamic focusing mechanism. **Zanjia Tong**, Yuhang Chen, Zewei Xu, et al. arXiv (2023).
+
+### Honor and Awards
+- 2023 China Undergraduate Mathematical Contest in Modeling - Second Class Award (National)
+- 2023 Lan Qiao China Collegiate Programming Contest - Python Programming - Second Class Award (National)
