@@ -19,7 +19,8 @@
       "homography": "单应性矩阵",
       "fundamental matrix": "基础矩阵",
       "parallx": "视差",
-      "loop closure": "闭环"
+      "loop closure": "闭环",
+      "closed-form solution": "解析解"
     }
   }
 }
