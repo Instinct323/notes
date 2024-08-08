@@ -5,3 +5,4 @@ Toolkit:
 - [Grammarly](https://www.grammarly.com/): 英语语法和拼写检查工具
 - [easyScholar](https://www.easyscholar.cc/): 浏览器插件, 辅助学术搜索
 - [CCF Rec. Conference Deadlines](https://ccfddl.github.io/): **CCF** 会议截止时间
+- [NiCad](https://www.txl.ca/txl-nicaddownload.html): 代码重复检测工具
