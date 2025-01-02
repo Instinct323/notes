@@ -8,11 +8,11 @@
 
 - NTFS
   - ntfsfix /dev/*
-  - reboot
   
 - ~/.bashrc
   - export LANG=en_US
   - export LANGUAGE=en_US
+  - export PATH=$PATH:~/.local/bin
   
 - /etc/default/grub
   - GRUB_DEFAULT=2

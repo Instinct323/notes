@@ -1,35 +1,41 @@
 Essential:
-  - Google Chrome: https://www.google.com/chrome/
-  - XiangRiKui: https://sunlogin.oray.com/
+  Google Chrome: https://www.google.com/chrome/
+  WPS Office: https://www.wps.cn/
+  XiangRiKui: https://sunlogin.oray.com/
 
 Tencent:
-  - QQ: https://im.qq.com/index/
-  - QQ Music: https://y.qq.com/
-  - QQ PCMgr: https://guanjia.qq.com/
-  - WeChat: https://weixin.qq.com/
-  - WeMeet: https://meeting.tencent.com/
+  QQ: https://im.qq.com/index/
+  QQ Music: https://y.qq.com/
+  QQ PCMgr: https://guanjia.qq.com/
+  WeChat: https://weixin.qq.com/
+  WeMeet: https://meeting.tencent.com/
 
 Programming:
-  - CLion: https://www.jetbrains.com.cn/clion/
-  - Docker: https://www.docker.com/
-  - Git: https://git-scm.com/
-  - MiniConda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/
-  - VcXsrv: https://github.com/ArcticaProject/vcxsrv
-  - Visual Studio: https://visualstudio.microsoft.com/zh-hans/
+  CLion: https://www.jetbrains.com.cn/clion/
+  Docker: https://www.docker.com/
+  Git: https://git-scm.com/
+  MiniConda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/
+  VcXsrv: https://github.com/ArcticaProject/vcxsrv
+  Visual Studio: https://visualstudio.microsoft.com/zh-hans/
 
-Other tools:
-  - ADrive: https://www.alipan.com/
-  - EV Capture: https://www.ieway.cn/
-  - TickTick: https://www.dida365.com/
-  - TranslucentTB: https://github.com/TranslucentTB/TranslucentTB
-  - WPS Office: https://www.wps.cn/
-  - YoudaoDict: https://fanyi.youdao.com/#/AITranslate
+Other-tools:
+  ADrive: https://www.alipan.com/
+  EV Capture: https://www.ieway.cn/
+  Snap Hutao: https://hut.ao/zh/
+  TickTick: https://www.dida365.com/
+  TranslucentTB: https://github.com/TranslucentTB/TranslucentTB/
+  YoudaoDict: https://fanyi.youdao.com/#/AITranslate/
 
-Zotero:
-  - MAIN: https://www.zotero.org/
-  - better-bibtex: https://github.com/retorquere/zotero-better-bibtex
-  - format-metadata: https://github.com/northword/zotero-format-metadata
-  - pdf-translate: https://github.com/windingwind/zotero-pdf-translate
+Zotero-plugins:
+  MAIN: https://www.zotero.org/
+  better-bibtex: https://github.com/retorquere/zotero-better-bibtex
+  format-metadata: https://github.com/northword/zotero-format-metadata
+  pdf-translate: https://github.com/windingwind/zotero-pdf-translate
 
-Games:
-  - Snap Hutao: https://hut.ao/zh/
+Docker-daemon-config:
+  "registry-mirrors": [
+    "https://docker.m.daocloud.io",
+    "https://dockerproxy.com",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://docker.nju.edu.cn"
+  ]
