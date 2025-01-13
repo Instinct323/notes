@@ -28,7 +28,7 @@ Other-tools:
 
 Zotero-plugins:
   MAIN: https://www.zotero.org/
-  better-bibtex: https://github.com/retorquere/zotero-better-bibtex
+  # better-bibtex: https://github.com/retorquere/zotero-better-bibtex
   format-metadata: https://github.com/northword/zotero-format-metadata
   pdf-translate: https://github.com/windingwind/zotero-pdf-translate
 

@@ -3,12 +3,12 @@
 - Download → C:\
 - tmp → C:\
 
-
 # Ubuntu
-
-- NTFS
-  - ntfsfix /dev/*
   
+- /etc/fstab
+  - RUN: ntfsfix /dev/*
+  - /dev/disk/by-uuid/* /media/user/* ntfs defaults 0 2
+
 - ~/.bashrc
   - export LANG=en_US
   - export LANGUAGE=en_US
