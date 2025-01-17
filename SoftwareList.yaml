@@ -12,11 +12,16 @@ Tencent:
 
 Programming:
   CLion: https://www.jetbrains.com.cn/clion/
-  Docker: https://www.docker.com/
   Git: https://git-scm.com/
   MiniConda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/
-  VcXsrv: https://github.com/ArcticaProject/vcxsrv
   Visual Studio: https://visualstudio.microsoft.com/zh-hans/
+
+Docker:
+  Docker: https://www.docker.com/
+  # VcXsrv/X0.hosts: Host IP address list
+  #   docker: DISPLAY=host.docker.internal:$NUM
+  #   ssh: DISPLAY=$HOST:$NUM
+  VcXsrv: https://sourceforge.net/projects/vcxsrv/files/
 
 Other-tools:
   ADrive: https://www.alipan.com/
@@ -28,11 +33,12 @@ Other-tools:
 
 Zotero-plugins:
   MAIN: https://www.zotero.org/
+  WebDAV: https://infini-cloud.net/en/index.html
   # better-bibtex: https://github.com/retorquere/zotero-better-bibtex
   format-metadata: https://github.com/northword/zotero-format-metadata
   pdf-translate: https://github.com/windingwind/zotero-pdf-translate
 
-Docker-daemon-config:
+Docker-daemon (/etc/docker/daemon.json):
   "registry-mirrors": [
     "https://docker.m.daocloud.io",
     "https://dockerproxy.com",
