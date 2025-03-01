@@ -1,23 +1,23 @@
 # Windows
 
-- Download → C:\
-- tmp → C:\
+- MOD env: Download, tmp
+- MOD time-sync: ntp.aliyun.com
 
 # Ubuntu
   
 - /etc/fstab
   - RUN: ntfsfix /dev/*
-  - /dev/disk/by-uuid/* /media/user/* ntfs defaults 0 2
+  - ADD: /dev/disk/by-uuid/* /media/user/* ntfs defaults 0 2
 
 - ~/.bashrc
-  - export LANG=en_US
-  - export LANGUAGE=en_US
-  - export PATH=$PATH:~/.local/bin
+  - ADD: export LANG=en_US
+  - ADD: export LANGUAGE=en_US
+  - ADD: export PATH=$PATH:~/.local/bin
   
 - /etc/default/grub
-  - GRUB_DEFAULT=2
+  - MOD: GRUB_DEFAULT=2
   - RUN: update-grub
   
 - /etc/ppp/options
-  - lcp-echo-interval
-  - lcp-echo-failure
+  - DEL: lcp-echo-interval
+  - DEL: lcp-echo-failure
