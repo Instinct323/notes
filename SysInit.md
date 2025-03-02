@@ -2,6 +2,7 @@
 
 - MOD env: Download, tmp
 - MOD time-sync: ntp.aliyun.com
+- MOD virtual-memory:  0.125 ~ 3 RAM
 
 # Ubuntu
   
