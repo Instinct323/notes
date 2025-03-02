@@ -1,6 +1,6 @@
 ---
 title: Zanjia Tong
-weight: 30
+weight: 24
 role: M.Sc. Student
 user_groups:
   - M.Sc. Students
