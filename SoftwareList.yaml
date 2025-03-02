@@ -39,10 +39,10 @@ Configuration:
 
   Docker-daemon (/etc/docker/daemon.json):
     "registry-mirrors": [
-      "https://docker.m.daocloud.io",
-      "https://dockerproxy.com",
       "https://docker.mirrors.ustc.edu.cn",
-      "https://docker.nju.edu.cn"
+      "https://docker.1ms.run",
+      "https://docker.udayun.com",
+      "https://dockerpull.com"
     ]
 
   JetBrains-plugins:
