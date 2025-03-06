@@ -33,14 +33,15 @@ Vectors and Qualifiers
 | `\vec{v}`            | $\vec{v}$            | `\overline{x}`        | $\overline{x}$        |
 | `\underline{x}`      | $\underline{x}$      | `\hat{a}`             | $\hat{a}$             |
 | `\tilde{n}`          | $\tilde{n}$          | `\dot{x}`             | $\dot{x}$             |
-| `\ddot{x}`           | $\ddot{x}$           | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
-| `\overleftarrow{BA}` | $\overleftarrow{BA}$ | `\mathring{R}`        | $\mathring{R}$        |
+| `\ddot{x}`           | $\ddot{x}$           | `\mathring{R}`        | $\mathring{R}$        |
+| `\overleftarrow{BA}` | $\overleftarrow{BA}$ | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
 | `\overbrace{AB}`     | $\overbrace{AB}$     | `\underbrace{AB}`     | $\underbrace{AB}$     |
 
 Logical and Set Symbols
 
 | Syntax            | Example           | Syntax        | Example       |
 |-------------------|-------------------|---------------|---------------|
+| `\exists`         | $\exists$         | `\forall`     | $\forall$     |
 | `\land`           | $\land$           | `\lor`        | $\lor$        |
 | `\lnot`           | $\lnot$           | `\Rightarrow` | $\Rightarrow$ |
 | `\Leftrightarrow` | $\Leftrightarrow$ | `\in`         | $\in$         |
@@ -58,10 +59,10 @@ Other Symbols
 
 Calculus Symbols
 
-| Syntax           | Example          | Syntax                          | Example                         |
-|------------------|------------------|---------------------------------|---------------------------------|
-| `\lim_{x \to a}` | $\lim_{x \to a}$ | `\infty`                        | $\infty$                        |
-| `\nabla`         | $\nabla$         | `\partial`                      | $\partial$                      |
+| Syntax           | Example          | Syntax     | Example    |
+|------------------|------------------|------------|------------|
+| `\lim_{x \to a}` | $\lim_{x \to a}$ | `\infty`   | $\infty$   |
+| `\nabla`         | $\nabla$         | `\partial` | $\partial$ |
 
 Summation, Integration, and Arrow Symbols
 

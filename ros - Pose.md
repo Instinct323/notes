@@ -1,6 +1,7 @@
 # SO3
 
 $\text{SO}(3) = \{R \in \mathbb{R}^{3 \times 3}\ |\ RR^T = I, \det(R) = 1\}$
+
 - Rotation Angle: $\theta$
 - Rotation Axis: $\{n = [n_x, n_y, n_z]^T \in \mathbb{R}^3\ |\ \|n\| = 1\}$
 - Lie Algebra: $\phi = \theta n \in \mathbb{R}^3$
@@ -62,20 +63,20 @@ q_z & q_y & -q_x & q_w \\
 
 ## Transformation
 
-| from \ to | $R$                                                                                              | $\phi$                                                                                                         | $q$                                                                                                                                                                                            |
-|-----------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| $R$       | $-$                                                                                              | $\begin{aligned} \theta &= \arccos \frac{\sqrt{1 + \text{tr}(R)}}{2} \\ Rn &= n\end{aligned}$                  | $\begin{aligned} q_w &= \frac{\sqrt{1 + \text{tr}(R)}}{2} \\ q_x &= \frac{R_{32} - R_{23}}{4q_w} \\ q_y &= \frac{R_{13} - R_{31}}{4q_w} \\ q_z &= \frac{R_{21} - R_{12}}{4q_w}  \end{aligned}$ |
-| $\phi$    | $R = \exp({\phi}^{\land}) = \cos \theta I + (1 - \cos \theta) nn^T + \sin \theta n^{\land} $             | $-$                                                                                                            | $\begin{aligned} q_w &= \cos \frac{\theta}{2} \\ [q_x, q_y, q_z]^T &= n \sin \frac{\theta}{2} \end{aligned}$                                                                                   |
-| $q$       | $\begin{aligned} p &= [q_x, q_y, q_z]^T \\ R &= 2(pp^T + q_w(q_wI + \hat{p})) - I \end{aligned}$ | $\begin{aligned} \theta &= 2\arccos q_w \\ n &= \frac{[q_x, q_y, q_z]^T}{\sin \frac{\theta}{2}} \end{aligned}$ | $-$                                                                                                                                                                                            |
+| from \ to | $R$                                                                                              | $\phi$                                                                                                                                                                                                                                | $q$                                                                                                                                                                                                                             |
+|-----------|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| $R$       | $-$                                                                                              | $\begin{aligned} \theta &= \arccos \frac{\sqrt{\text{tr}(R) - 1}}{2} \\ n &= \frac{ \begin{bmatrix} R_{32} - R_{23} \\ R_{13} - R_{31} \\ R_{21} - R_{12} \\ \end{bmatrix} }{2\sin \frac{\theta}{2}(\text{tr}(R) + 1)} \end{aligned}$ | $\begin{aligned} q_w &= \frac{\sqrt{\text{tr}(R) + 1}}{2} \\ \begin{bmatrix} q_x \\ q_y \\ q_z \\ \end{bmatrix} &= \begin{bmatrix} R_{32} - R_{23} \\ R_{13} - R_{31} \\ R_{21} - R_{12} \\ \end{bmatrix} / 4q_w \end{aligned}$ |
+| $\phi$    | $R = \exp({\phi}^{\land}) = \cos \theta I + (1 - \cos \theta) nn^T + \sin \theta n^{\land} $     | $-$                                                                                                                                                                                                                                   | $\begin{aligned} q_w &= \cos \frac{\theta}{2} \\ [q_x, q_y, q_z]^T &= n \sin \frac{\theta}{2} \end{aligned}$                                                                                                                    |
+| $q$       | $\begin{aligned} p &= [q_x, q_y, q_z]^T \\ R &= 2(pp^T + q_w(q_wI + \hat{p})) - I \end{aligned}$ | $\begin{aligned} \theta &= 2\arccos q_w \\ n &= \frac{[q_x, q_y, q_z]^T}{\sin \frac{\theta}{2}} \end{aligned}$                                                                                                                        | $-$                                                                                                                                                                                                                             |
 
 # SE3
 
-$\text{SE}(3) = \{T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix} \in \mathbb{R}^{4 \times 4}\ |\  R \in \text{SO}(3), t \in \mathbb{R}^3\}$
+$\text{SE}(3) = \{T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix} \in \mathbb{R}^{4 \times 4}\ |\ R \in \text{SO}(3), t \in \mathbb{R}^3\}$
 
-$T^{-1} = \begin{bmatrix}
+$$T^{-1} = \begin{bmatrix}
 R^T & -R^T t \\
 0^T & 1 \\
-\end{bmatrix}$
+\end{bmatrix}$$
 
 - Lie Algebra: $\xi = [\rho, \phi]^T \in \mathbb{R}^6$
 
