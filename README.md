@@ -10,7 +10,7 @@ I am **Zanjia Tong**,
 a M.Sc. student in [Robotics and Computer Vision Lab](https://rcvlab.eee.sustech.edu.cn/)
 under the direction of [Prof. Hong Zhang](https://www.sustech.edu.cn/zh/faculties/zhanghong.html)
 at Southern University of Science and Technology (SUSTech), since 09/2024.
-I received the B.E. degree in automation from the Guangdong University of Technology, in 06/2024.
+I received the B.E. degree in automation from the Guangdong University of Technology (GDUT), in 06/2024.
 I previously worked on neural network-based computer vision.
 Currently, my research focuses on multi-view geometric computer vision.
 
