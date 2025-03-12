@@ -1,5 +1,6 @@
 *.zip
 *.rar
 ~$*.*
+.~*.*
 desktop.ini
 *.chm
