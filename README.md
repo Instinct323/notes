@@ -16,7 +16,7 @@ Currently, my research focuses on multi-view geometric computer vision.
 
 ## 📚 Publications
 
-- ✨ *Wise-IoU: bounding box regression loss with dynamic focusing mechanism*. **Zanjia Tong**, Yuhang Chen, Zewei Xu, et al. [arXiv](https://arxiv.org/abs/2301.10051). 2023. (![Citations](https://img.shields.io/badge/Citations-800+-00b4d8), [GitHub](https://github.com/Instinct323/wiou))
+- ✨ *Wise-IoU: bounding box regression loss with dynamic focusing mechanism*. **Zanjia Tong**, Yuhang Chen, Zewei Xu, et al. [arXiv](https://arxiv.org/abs/2301.10051). 2023. ([GitHub](https://github.com/Instinct323/wiou))
 
 ## 🏆 Honor and Awards
 
