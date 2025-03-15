@@ -1,6 +1,6 @@
 # Windows
 
-- MOD env: Download, tmp
+- MOD env: Download, Documents, tmp
 - MOD time-sync: ntp.aliyun.com
 - MOD virtual-memory:  0.125 ~ 3 RAM
 
