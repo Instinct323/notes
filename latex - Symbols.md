@@ -51,11 +51,11 @@ Logical and Set Symbols
 
 Other Symbols
 
-| Syntax      | Example     | Syntax   | Example  |
-|-------------|-------------|----------|----------|
-| `\dots`     | $\dots$     | `\perp`  | $\perp$  |
-| `\parallel` | $\parallel$ | `\angle` | $\angle$ |
-| `^\circ`    | $90^\circ$  |          |          |
+| Syntax      | Example     | Syntax   | Example    |
+|-------------|-------------|----------|------------|
+| `\dots`     | $\dots$     | `vdots`  | $\vdots$   |
+| `\parallel` | $\parallel$ | `\angle` | $\angle$   |
+| `\perp`     | $\perp$     | `^\circ` | $90^\circ$ |
 
 Calculus Symbols
 

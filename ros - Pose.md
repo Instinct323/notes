@@ -17,6 +17,8 @@ n_z & 0 & -n_x \\
 
 $$nn^T = I + n^{\land2}$$
 
+$$n^{\land}n = 0$$
+
 $$\begin{aligned}
 \exp({\phi}^{\land}) &= I& + \sin \theta &n^{\land}& + (1 - \cos \theta)&n^{\land2} \\
 J_l(\phi^{\land}) &= I& + \frac{1 - \cos \theta}{\theta} &n^{\land}& + (1 - \frac{\sin \theta}{\theta})&n^{\land2} \\
