@@ -18,14 +18,22 @@ Font Styles
 
 Operators
 
+| Syntax   | Example  | Syntax    | Example   |
+|----------|----------|-----------|-----------|
+| `\times` | $\times$ | `\div`    | $\div$    |
+| `\geq`   | $\geq$   | `\leq`    | $\leq$    |
+| `\pm`    | $\pm$    | `\mp`     | $\mp$     |
+| `\oplus` | $\oplus$ | `\otimes` | $\otimes$ |
+| `\cdot`  | $\cdot$  |           |           |
+
+Relations
+
 | Syntax    | Example   | Syntax    | Example   |
 |-----------|-----------|-----------|-----------|
-| `\times`  | $\times$  | `\div`    | $\div$    |
-| `\cdot`   | $\cdot$   | `\neq`    | $\neq$    |
-| `\geq`    | $\geq$    | `\leq`    | $\leq$    |
-| `\pm`     | $\pm$     | `\mp`     | $\mp$     |
-| `\oplus`  | $\oplus$  | `\otimes` | $\otimes$ |
+| `\sim`    | $\sim$    | `\doteq`  | $\doteq$  |
+| `\simeq`  | $\simeq$  | `\neq`    | $\neq$    |
 | `\approx` | $\approx$ | `\equiv`  | $\equiv$  |
+| `\cong`   | $\cong$   | `\propto` | $\propto$ |
 
 Fractions, Square Roots, Brackets, and Norms
 
