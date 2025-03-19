@@ -1,3 +1,17 @@
+# Outer Product
+
+$$n^{\land} = \begin{bmatrix}
+0 & -n_z & n_y \\
+n_z & 0 & -n_x \\
+-n_y & n_x & 0 \\
+\end{bmatrix}$$
+
+$$n_1 \times n_2 = n^{\land}_1n_2$$
+
+$$nn^T = I + n^{\land2}$$
+
+$$n^{\land}n = 0$$
+
 # SO3
 
 $\text{SO}(3) = \{R \in \mathbb{R}^{3 \times 3}\ |\ RR^T = I, \det(R) = 1\}$
@@ -8,16 +22,6 @@ $\text{SO}(3) = \{R \in \mathbb{R}^{3 \times 3}\ |\ RR^T = I, \det(R) = 1\}$
 - Quaternion: $q = [q_w, q_x, q_y, q_z]^T$
 
 ## Lie Algebra
-
-$$n^{\land} = \begin{bmatrix}
-0 & -n_z & n_y \\
-n_z & 0 & -n_x \\
--n_y & n_x & 0 \\
-\end{bmatrix}$$
-
-$$nn^T = I + n^{\land2}$$
-
-$$n^{\land}n = 0$$
 
 $$\begin{aligned}
 \exp({\phi}^{\land}) &= I& + \sin \theta &n^{\land}& + (1 - \cos \theta)&n^{\land2} \\
