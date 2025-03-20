@@ -24,7 +24,7 @@ Operators
 | `\geq`   | $\geq$   | `\leq`    | $\leq$    |
 | `\pm`    | $\pm$    | `\mp`     | $\mp$     |
 | `\oplus` | $\oplus$ | `\otimes` | $\otimes$ |
-| `\cdot`  | $\cdot$  |           |           |
+| `\cdot`  | $\cdot$  | `\mid`    | $\mid$    |
 
 Relations
 
