@@ -94,6 +94,23 @@ $$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto p(x \mid 
 
 # 非线性优化
 
+最小二乘法拟合:
+
+$$f(x) = \sum_{i = 0}^n a_i x^i$$
+$$\begin{bmatrix}
+\sum \omega_i & \sum \omega_i x_i & \cdots & \sum \omega_i x_i^n \\
+\sum \omega_i x_i & \sum \omega_i x_i^2 & \cdots & \sum \omega_i x_i^{n+1} \\
+\vdots & \vdots & \ddots & \vdots \\
+\sum \omega_i x_i^n & \sum \omega_i x_i^{n+1} & \cdots & \sum \omega_i x_i^{2n}
+\end{bmatrix}
+\begin{bmatrix}
+a_0 \\ a_1 \\ \vdots \\ a_n
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sum \omega_i y_i \\ \sum \omega_i x_i y_i \\ \vdots \\ \sum \omega_i x_i^n y_i
+\end{bmatrix}$$
+
 一阶导数: 梯度, 雅可比矩阵 (Jacobian)
 
 二阶导数: 海塞矩阵 (Hessian) 
