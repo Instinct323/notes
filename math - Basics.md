@@ -92,6 +92,18 @@ $$\mathcal{L}(\theta \mid x) = p(x \mid \theta) = \prod_{i=1}^n p(x_i \mid \thet
 
 $$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto p(x \mid \theta)\ p(\theta)$$
 
+# 线性代数
+
+矩阵的迹:
+
+$$\text{tr}(A) = \text{tr}(A^T) = \sum_{i=1}^n \lambda_i$$
+$$\text{tr}(aA + bB) = a \cdot \text{tr}(A) + b \cdot \text{tr}(B)$$
+$$\text{tr}(A_1 A_2 \cdots A_k) = \text{tr}(A_2 \cdots A_k A_1)$$
+
+矩阵的二范数:
+
+$$\|A\|_2^2 = \text{tr}(A A^T)$$
+
 # 非线性优化
 
 最小二乘法拟合:
