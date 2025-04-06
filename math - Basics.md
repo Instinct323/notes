@@ -123,14 +123,16 @@ a_0 \\ a_1 \\ \vdots \\ a_n
 \sum \omega_i y_i \\ \sum \omega_i x_i y_i \\ \vdots \\ \sum \omega_i x_i^n y_i
 \end{bmatrix}$$
 
-一阶导数: 梯度, 雅可比矩阵 (Jacobian)
+Jacobian, Hessian:
 
-二阶导数: 海塞矩阵 (Hessian) 
+$$ F(x) = \frac{1}{2}\|f(x)\|^2 $$
+$$ J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = J_f^T f(x)$$
+$$ H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx} $$
 
 牛顿法 (泰勒展开):
 
 $$ F(x) = F(x_0) + g^T \Delta x + o(\Delta x) $$
-$$ \nabla f(x) = g + H(\Delta x) = 0 $$
+$$ \nabla f(x) = g + H \Delta x = 0 $$
 $$ \Delta x = -H^{-1}g $$
 
 高斯牛顿法 (最小二乘问题):
