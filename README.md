@@ -6,7 +6,7 @@
 
 ## 🎓 About Me
 
-I am **Zanjia Tong**,
+I am **Zanjia Tong** (童赞嘉),
 a M.Sc. student in [Robotics and Computer Vision Lab](https://rcvlab.eee.sustech.edu.cn/)
 under the direction of [Prof. Hong Zhang](https://www.sustech.edu.cn/zh/faculties/zhanghong.html)
 at Southern University of Science and Technology (SUSTech), since 09/2024.
