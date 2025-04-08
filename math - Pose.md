@@ -85,9 +85,12 @@ R^T & -R^T t \\
 \end{bmatrix}$$
 
 - Lie Algebra: $\xi = [\rho, \phi]^T \in \mathbb{R}^6$
-- Epipolar Constraint: $x_2^T E x_1 = p_2^T F p_1 = 0, \quad p = Kx$
+
+Epipolar Constraint: $x_2^T E x_1 = p_2^T F p_1 = 0, \quad p = Kx$
+
 - Essential Matrix: $E = t^{\land} R$
 - Fundamental Matrix: $F = K^{-T} E K^{-1}$
+- Homography: $p_2 \approx H p_1$
 
 ## Lie Algebra
 

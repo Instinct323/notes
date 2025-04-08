@@ -94,19 +94,14 @@ $$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto p(x \mid 
 
 # 线性代数
 
-矩阵的迹:
+Trace:
 
 $$\text{tr}(A) = \text{tr}(A^T) = \sum_{i=1}^n \lambda_i$$
 $$\text{tr}(aA + bB) = a \cdot \text{tr}(A) + b \cdot \text{tr}(B)$$
 $$\text{tr}(A_1 A_2 \cdots A_k) = \text{tr}(A_2 \cdots A_k A_1)$$
-
-矩阵的二范数:
-
 $$\|A\|_2^2 = \text{tr}(A A^T)$$
 
-# 非线性优化
-
-最小二乘法拟合:
+Linear least squares:
 
 $$f(x) = \sum_{i = 0}^n a_i x^i$$
 $$\begin{bmatrix}
@@ -123,26 +118,16 @@ a_0 \\ a_1 \\ \vdots \\ a_n
 \sum \omega_i y_i \\ \sum \omega_i x_i y_i \\ \vdots \\ \sum \omega_i x_i^n y_i
 \end{bmatrix}$$
 
-Jacobian, Hessian:
+Non-linear least squares:
 
 $$ F(x) = \frac{1}{2}\|f(x)\|^2 $$
 $$ J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = J_f^T f(x)$$
 $$ H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx} $$
 
-牛顿法 (泰勒展开):
-
-$$ F(x) = F(x_0) + g^T \Delta x + o(\Delta x) $$
-$$ \nabla f(x) = g + H \Delta x = 0 $$
-$$ \Delta x = -H^{-1}g $$
-
-高斯牛顿法 (最小二乘问题):
-
-$$ F(x) = \|f(x)\|^2 $$
-$$ \nabla F(x + \Delta x) = g \cdot f(x) + gg^T \Delta x = 0 $$
-$$ \Delta x = -(gg^T)^{-1}g \cdot f(x) $$
-
-列文伯格-马尔夸特 (高斯牛顿法 plus):
-- 给定信赖区域半径, 根据近似程度 (后验下降 / 先验下降) 对信赖区域半径进行缩放, 作为 "学习率"
+- Gradient descent: $ \Delta x = -\alpha J_F^T $
+- Newton’s method: $ \Delta x = -H_F^{-1} J_F $
+- Gauss-Newton’s method: $ \Delta x = -(J_f^T J_f)^{-1} J_f^T f(x) $
+- Levenberg-Marquardt: $ [J_f^T J_f + \lambda I] \Delta x = -J_f^T f(x) $
 
 # 卡尔曼滤波
 
