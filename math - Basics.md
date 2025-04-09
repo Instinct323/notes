@@ -121,7 +121,7 @@ a_0 \\ a_1 \\ \vdots \\ a_n
 Non-linear least squares:
 
 $$ F(x) = \frac{1}{2}\|f(x)\|^2 $$
-$$ J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = J_f^T f(x)$$
+$$ J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = f^T(x) J_f$$
 $$ H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx} $$
 
 - Gradient descent: $ \Delta x = -\alpha J_F^T $
