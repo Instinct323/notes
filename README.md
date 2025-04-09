@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github)](https://github.com/Instinct323)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-333333?logo=google-scholar)](https://scholar.google.com/citations?user=Zanjia_Tong)
 [![CSDN](https://img.shields.io/badge/CSDN-2B51B6?logo=csdn&logoColor=white)](https://blog.csdn.net/qq_55745968)
-[![Channels](https://img.shields.io/badge/Channels-荷碧TongZJ%20-07C160?logo=wechat&logoColor=white)]()
+[![Channels](https://img.shields.io/badge/Channels-荷碧TongZJ-07C160?logo=wechat&logoColor=white&color=808080&labelColor=07C160)](#)
 
 ## 🎓 About Me
 
