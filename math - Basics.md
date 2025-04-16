@@ -61,36 +61,36 @@ $$e^{i\theta} = \cos \theta + i \sin \theta$$
 
 $$P(A) \ P(B \mid A) = P(AB)$$
 
-贝叶斯公式:
-
-$$P(w_i \mid A) = \frac{P(w_i A)}{P(A)} = \frac{P(w_i)\ P(A \mid w_i)}{\sum_{i=1}^n P(w_i)\ P(A \mid w_i)}$$
-
 数学期望:
 
 $$\mathbb{D}[X] = \mathbb{E}[X^2] - \mathbb{E}^2[X]$$
 $$\mathbb{D}[wX] = w^2 \mathbb{D}[X]$$
 $$\mathbb{D}[X \pm Y] = \mathbb{D}[X] + \mathbb{D}[Y] \pm 2 \text{cov}(X, Y)$$
 
-二项分布:
+Bayes Law:
+
+$$P(w_i \mid A) = \frac{P(w_i A)}{P(A)} = \frac{P(w_i)\ P(A \mid w_i)}{\sum_{i=1}^n P(w_i)\ P(A \mid w_i)}$$
+
+Binomial distribution:
 
 $$X \sim B(n, p)$$
 $$P(x) = B(x \mid n, p) = C_n^x p^x (1 - p)^{n - x}$$
 $$\mathbb{E}[X] = np$$
 $$\mathbb{D}[X] = np(1 - p)$$
 
-高斯分布:
+Gaussian distribution:
 
 $$X \sim \mathcal{N}(\mu, \sigma^2)$$
 $$P(x) = \mathcal{N}(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma} \exp \left( -\frac{(x - \mu)^2}{2\sigma^2} \right)$$
 $$\int_{-\infty}^{\infty} \mathcal{N}(x \mid \mu, \sigma^2) \ dx = 1$$
 
-极大似然估计 (Maximum Likelihood Estimation):
+Maximum Likelihood Estimation:
 
 $$\mathcal{L}(\theta \mid x) = p(x \mid \theta) = \prod_{i=1}^n p(x_i \mid \theta)$$
 
-最大后验估计 (Maximum A Posteriori Estimation):
+Maximum A Posteriori Estimation (Prior $p(\theta)$):
 
-$$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto p(x \mid \theta)\ p(\theta)$$
+$$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto \mathcal{L}(\theta \mid x)\ p(\theta)$$
 
 # 线性代数
 
