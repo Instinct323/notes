@@ -20,6 +20,14 @@ x - \sin x \sim \frac{x^3}{6} \\
 \tan x - \sin x \sim \frac{x^3}{2} \\
 \end{cases}$$
 
+三点求导公式:
+
+$$\begin{aligned}
+f'(x_0) &\approx \frac{-3f(x_0) + 4f(x_1) - f(x_2)}{2h} \\
+&\approx \frac{f(x_1) - f(x_{-1})}{2h} \\
+&\approx \frac{f(x_{-2}) - 4f(x_{-1}) + 3f(x_0)}{2h}
+\end{aligned}$$
+
 导数与微分:
 
 | 函数                           | 导数                                                 |
@@ -101,22 +109,10 @@ $$\text{tr}(aA + bB) = a \cdot \text{tr}(A) + b \cdot \text{tr}(B)$$
 $$\text{tr}(A_1 A_2 \cdots A_k) = \text{tr}(A_2 \cdots A_k A_1)$$
 $$\|A\|_2^2 = \text{tr}(A A^T)$$
 
-Linear least squares:
+Pseudo-inverse:
 
-$$f(x) = \sum_{i = 0}^n a_i x^i$$
-$$\begin{bmatrix}
-\sum \omega_i & \sum \omega_i x_i & \cdots & \sum \omega_i x_i^n \\
-\sum \omega_i x_i & \sum \omega_i x_i^2 & \cdots & \sum \omega_i x_i^{n+1} \\
-\vdots & \vdots & \ddots & \vdots \\
-\sum \omega_i x_i^n & \sum \omega_i x_i^{n+1} & \cdots & \sum \omega_i x_i^{2n}
-\end{bmatrix}
-\begin{bmatrix}
-a_0 \\ a_1 \\ \vdots \\ a_n
-\end{bmatrix}
-=
-\begin{bmatrix}
-\sum \omega_i y_i \\ \sum \omega_i x_i y_i \\ \vdots \\ \sum \omega_i x_i^n y_i
-\end{bmatrix}$$
+$$A \in \mathbb{R}^{m \times n}, \quad A^+ \in \mathbb{R}^{n \times m}$$
+$$AA^+ A = A, \quad (AA^+)^T = AA^+$$
 
 Non-linear least squares:
 
@@ -128,6 +124,12 @@ $$ H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx} $$
 - Newton’s method: $ \Delta x = -H_F^{-1} J_F $
 - Gauss-Newton’s method: $ \Delta x = -(J_f^T J_f)^{-1} J_f^T f(x) $
 - Levenberg-Marquardt: $ [J_f^T J_f + \lambda I] \Delta x = -J_f^T f(x) $
+
+Linear least squares:
+
+$$f(w) = \rho \cdot (Xw - y) = X_\rho w - y_\rho$$
+$$J_f = X_\rho$$
+$$\nabla F = J_f^T f(w) = X_\rho^T X_\rho w - X_\rho^T y_\rho$$
 
 # 卡尔曼滤波
 
