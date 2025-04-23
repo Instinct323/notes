@@ -143,7 +143,7 @@ $$H = \frac{\partial h}{\partial x_t}$$
 $$\hat{x}_t^- = f(x_{t-1}, u_t) = F x_{t-1} + u_t$$
 $$P_t^- = F P_{t-1} F^T + R$$
 
-卡尔曼增益: 
+卡尔曼增益:
 
 $$K_t = \frac{P_t^- H^T}{H P_t^- H^T + Q}$$
 
@@ -151,3 +151,43 @@ $$K_t = \frac{P_t^- H^T}{H P_t^- H^T + Q}$$
 
 $$x_t = \hat{x}_t^- + K_t(z_t - H \hat{x}_t^-)$$
 $$P_t = (I - K_t H) P_t^-$$
+
+# 模型评估
+
+Information Entropy:
+
+$$H(P, Q) = -\int p(x) \cdot \log q(x)\ dx$$
+
+KL Divergence:
+
+$$KL(P \| Q) = H(P, Q) - H(P)$$
+
+- Forward derivative:
+
+$$\frac{\partial KL(P \| Q)}{\partial P} = 1 + \int \log \frac{p(x)}{q(x)}\ dx$$
+
+- Backward derivative:
+
+$$\frac{\partial KL(P \| Q)}{\partial Q} = -\int \frac{p(x)}{q(x)}\ dx$$
+
+Classification Metrics
+
+| Metric          | Formula                                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------------------------|
+| Accuracy        | $\frac{TP + TN}{P + N}$                                                                                           |
+| Specificity     | $\frac{TN}{N}$                                                                                                    |
+| Precision       | $\frac{TP}{P'}$                                                                                                   |
+| Recall          | $\frac{TP}{P}$                                                                                                    |
+| $F_\beta$-Score | $\frac{(1 + \beta^2) \cdot \text{Precision} \cdot \text{Recall}}{\beta^2 \cdot \text{Precision} + \text{Recall}}$ |
+
+Receiver Operating Characteristic (ROC)
+
+- x-axis: False Positive Rate (FPR)
+
+$$\text{FPR} = 1 - \text{Specificity}$$
+
+- y-axis: True Positive Rate (TPR)
+
+$$\text{TPR} = \text{Recall}$$
+
+- Area Under the Curve (AUC): Measures the overall performance of the classifier.

@@ -65,6 +65,7 @@ Logical and Set Symbols
 | `\notin`          | $\notin$          | `\subset`     | $\subset$     |
 | `\subseteq`       | $\subseteq$       | `\cup`        | $\cup$        |
 | `\cap`            | $\cap$            | `\emptyset`   | $\emptyset$   |
+| `\langle`         | $\langle$         | `\rangle`     | $\rangle$     |
 
 Other Symbols
 
