@@ -30,22 +30,23 @@ f'(x_0) &\approx \frac{-3f(x_0) + 4f(x_1) - f(x_2)}{2h} \\
 
 导数与微分:
 
-| 函数                           | 导数                                                 |
-|------------------------------|----------------------------------------------------|
-| $ f(x) = x^n $               | $ f'(x) = nx^{n-1} $                               |
-| $ f(x) = a^x $               | $ f'(x) = a^x \ln(a) $                             |
-| $ f(x) = \log_a(x) $         | $ f'(x) = \frac{1}{x \ln(a)} $                     |
-| $ f(x) = \sin(x) $           | $ f'(x) = \cos(x) $                                |
-| $ f(x) = \cos(x) $           | $ f'(x) = -\sin(x) $                               |
-| $ f(x) = \tan(x) $           | $ f'(x) = \sec^2(x) $                              |
-| $ f(x) = \cot(x) $           | $ f'(x) = -\csc^2(x) $                             |
-| $ f(x) = \sec(x) $           | $ f'(x) = \sec(x) \tan(x) $                        |
-| $ f(x) = \csc(x) $           | $ f'(x) = -\csc(x) \cot(x) $                       |
-| $ f(x) = \sin^n(x) $         | $ f'(x) = n \sin^{n-1}(x) \cos(x) $                |
-| $ f(x) = \cos^n(x) $         | $ f'(x) = -n \cos^{n-1}(x) \sin(x) $               |
-| $ f(x) = x^n \ln(x) $        | $ f'(x) = nx^{n-1} \ln(x) + \frac{x^{n-1}}{x} $    |
-| $ f(x) = \frac{u(x)}{v(x)} $ | $ f'(x) = \frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2} $ |
-| $ f(x) = u(x) \cdot v(x) $   | $ f'(x) = u'(x)v(x) + u(x)v'(x) $                  |
+| 函数                             | 导数                                                                                                          |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------|
+| $f(x) = x^n$                   | $\frac{df}{dx} = nx^{n-1}$                                                                                  |
+| $f(x) = a^x$                   | $\frac{df}{dx} = a^x \ln(a)$                                                                                |
+| $f(x) = \log_a(x)$             | $\frac{df}{dx} = \frac{1}{x \ln(a)}$                                                                        |
+| $f(x) = \sin(x)$               | $\frac{df}{dx} = \cos(x)$                                                                                   |
+| $f(x) = \cos(x)$               | $\frac{df}{dx} = -\sin(x)$                                                                                  |
+| $f(x) = \tan(x)$               | $\frac{df}{dx} = \sec^2(x)$                                                                                 |
+| $f(x) = \cot(x)$               | $\frac{df}{dx} = -\csc^2(x)$                                                                                |
+| $f(x) = \sec(x)$               | $\frac{df}{dx} = \sec(x) \tan(x)$                                                                           |
+| $f(x) = \csc(x)$               | $\frac{df}{dx} = -\csc(x) \cot(x)$                                                                          |
+| $f(x) = \sin^n(x)$             | $\frac{df}{dx} = n \sin^{n-1}(x) \cos(x)$                                                                   |
+| $f(x) = \cos^n(x)$             | $\frac{df}{dx} = -n \cos^{n-1}(x) \sin(x)$                                                                  |
+| $f(x) = x^n \ln(x)$            | $\frac{df}{dx} = nx^{n-1} \ln(x) + \frac{x^{n-1}}{x}$                                                       |
+| $f(x) = \frac{u(x)}{v(x)}$     | $\frac{df}{dx} = \frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}$                                                    |
+| $f(x) = u(x) \cdot v(x)$       | $\frac{df}{dx} = u'(x)v(x) + u(x)v'(x)$                                                                     |
+| $f(x, y) = \text{atan2}(y, x)$ | $\frac{\partial f}{\partial x} = \frac{-y}{x^2 + y^2}, \frac{\partial f}{\partial y} = \frac{x}{x^2 + y^2}$ | 
 
 不定积分:
 
@@ -96,7 +97,7 @@ Maximum Likelihood Estimation:
 
 $$\mathcal{L}(\theta \mid x) = p(x \mid \theta) = \prod_{i=1}^n p(x_i \mid \theta)$$
 
-Maximum A Posteriori Estimation (Prior $p(\theta)$):
+Maximum A Posteriori Estimation (Prior$p(\theta)$):
 
 $$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto \mathcal{L}(\theta \mid x)\ p(\theta)$$
 
@@ -116,14 +117,14 @@ $$AA^+ A = A, \quad (AA^+)^T = AA^+$$
 
 Non-linear least squares:
 
-$$ F(x) = \frac{1}{2}\|f(x)\|^2 $$
-$$ J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = f^T(x) J_f$$
-$$ H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx} $$
+$$F(x) = \frac{1}{2}\|f(x)\|^2$$
+$$J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = f^T(x) J_f$$
+$$H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx}$$
 
-- Gradient descent: $ \Delta x = -\alpha J_F^T $
-- Newton’s method: $ \Delta x = -H_F^{-1} J_F $
-- Gauss-Newton’s method: $ \Delta x = -(J_f^T J_f)^{-1} J_f^T f(x) $
-- Levenberg-Marquardt: $ [J_f^T J_f + \lambda I] \Delta x = -J_f^T f(x) $
+- Gradient descent:$\Delta x = -\alpha J_F^T$
+- Newton’s method:$\Delta x = -H_F^{-1} J_F$
+- Gauss-Newton’s method:$\Delta x = -(J_f^T J_f)^{-1} J_f^T f(x)$
+- Levenberg-Marquardt:$[J_f^T J_f + \lambda I] \Delta x = -J_f^T f(x)$
 
 Linear least squares:
 
@@ -133,24 +134,28 @@ $$\nabla F = J_f^T f(w) = X_\rho^T X_\rho w - X_\rho^T y_\rho$$
 
 # 卡尔曼滤波
 
-雅可比矩阵 (状态转移矩阵, 观测系统参数):
+State Transition Equation:
 
-$$F = \frac{\partial f(x_{t-1}, u_t)}{\partial x_{t-1}}$$
-$$H = \frac{\partial h}{\partial x_t}$$
+$$x_k = f(x_{k-1}, u_k) + w_k, \quad w_k \sim \mathcal{N}(0, R_k)$$
 
-先验估计及协方差:
+Measurement Equation:
 
-$$\hat{x}_t^- = f(x_{t-1}, u_t) = F x_{t-1} + u_t$$
-$$P_t^- = F P_{t-1} F^T + R$$
+$$z_k = h(x_k) + v_k, \quad v_k \sim \mathcal{N}(0, Q_k)$$
 
-卡尔曼增益:
+Prior Estimate:
 
-$$K_t = \frac{P_t^- H^T}{H P_t^- H^T + Q}$$
+$$F = \frac{\partial f}{\partial x^T} \bigg| _{\hat{x}_{k-1}}$$
+$$\overline{x}_k = f(\hat{x}_{k-1}, u_k)$$
+$$\overline{P}_k = F \hat{P}_{k-1} F^T + R_k$$
+$$p(x_k \mid x_0, u_{1:k}, z_{0:k-1}) \sim \mathcal{N}(\overline{x}_k, \overline{P}_k)$$
 
-后验估计及协方差:
+Posterior Estimate:
 
-$$x_t = \hat{x}_t^- + K_t(z_t - H \hat{x}_t^-)$$
-$$P_t = (I - K_t H) P_t^-$$
+$$H = \frac{\partial h}{\partial x^T} \bigg| _{\hat{x}_k}$$
+$$K_k = \overline{P}_k H^T (H \overline{P}_k H^T + Q_k)^{-1}$$
+$$\hat{x}_k = \overline{x}_k + K_k (z_k - h(\overline{x}_k))$$
+$$\hat{P}_k = (I - K_k H) \overline{P}_k$$
+$$p(x_k \mid x_0, u_{1:k}, z_{0:k}) \sim \mathcal{N}(\hat{x}_k, \hat{P}_k)$$
 
 # 模型评估
 
