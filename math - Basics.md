@@ -70,24 +70,25 @@ $$e^{i\theta} = \cos \theta + i \sin \theta$$
 
 $$P(A) \ P(B \mid A) = P(AB)$$
 
-数学期望:
+Math Expectation:
 
 $$\mathbb{D}[X] = \mathbb{E}[X^2] - \mathbb{E}^2[X]$$
 $$\mathbb{D}[wX] = w^2 \mathbb{D}[X]$$
+$$\text{cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$$
 $$\mathbb{D}[X \pm Y] = \mathbb{D}[X] + \mathbb{D}[Y] \pm 2 \text{cov}(X, Y)$$
 
 Bayes Law:
 
 $$P(w_i \mid A) = \frac{P(w_i A)}{P(A)} = \frac{P(w_i)\ P(A \mid w_i)}{\sum_{i=1}^n P(w_i)\ P(A \mid w_i)}$$
 
-Binomial distribution:
+Binomial Distribution:
 
 $$X \sim B(n, p)$$
 $$P(x) = B(x \mid n, p) = C_n^x p^x (1 - p)^{n - x}$$
 $$\mathbb{E}[X] = np$$
 $$\mathbb{D}[X] = np(1 - p)$$
 
-Gaussian distribution:
+Gaussian Distribution:
 
 $$X \sim \mathcal{N}(\mu, \sigma^2)$$
 $$P(x) = \mathcal{N}(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma} \exp \left( -\frac{(x - \mu)^2}{2\sigma^2} \right)$$
@@ -97,7 +98,7 @@ Maximum Likelihood Estimation:
 
 $$\mathcal{L}(\theta \mid x) = p(x \mid \theta) = \prod_{i=1}^n p(x_i \mid \theta)$$
 
-Maximum A Posteriori Estimation (Prior$p(\theta)$):
+Maximum A Posteriori Estimation (Prior $p(\theta)$):
 
 $$p(\theta \mid x) = \frac{p(x \mid \theta)\ p(\theta) }{p(x)} \propto \mathcal{L}(\theta \mid x)\ p(\theta)$$
 
@@ -115,7 +116,7 @@ Pseudo-inverse:
 $$A \in \mathbb{R}^{m \times n}, \quad A^+ \in \mathbb{R}^{n \times m}$$
 $$AA^+ A = A, \quad (AA^+)^T = AA^+$$
 
-Non-linear least squares:
+Non-linear Least Squares:
 
 $$F(x) = \frac{1}{2}\|f(x)\|^2$$
 $$J_f = \frac{df}{dx^T}, \quad J_F = \nabla F^T = \frac{dF}{dx^T} = f^T(x) J_f$$
@@ -126,7 +127,7 @@ $$H_F = \frac{d^2F}{dx^Tdx} = \frac{dJ_F}{dx}$$
 - Gauss-Newton’s method:$\Delta x = -(J_f^T J_f)^{-1} J_f^T f(x)$
 - Levenberg-Marquardt:$[J_f^T J_f + \lambda I] \Delta x = -J_f^T f(x)$
 
-Linear least squares:
+Linear Least Squares:
 
 $$f(w) = \rho \cdot (Xw - y) = X_\rho w - y_\rho$$
 $$J_f = X_\rho$$
@@ -167,11 +168,11 @@ KL Divergence:
 
 $$KL(P \| Q) = H(P, Q) - H(P)$$
 
-- Forward derivative:
+- Forward Derivative:
 
 $$\frac{\partial KL(P \| Q)}{\partial P} = 1 + \int \log \frac{p(x)}{q(x)}\ dx$$
 
-- Backward derivative:
+- Backward Derivative:
 
 $$\frac{\partial KL(P \| Q)}{\partial Q} = -\int \frac{p(x)}{q(x)}\ dx$$
 
